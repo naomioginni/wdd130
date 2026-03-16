@@ -54,15 +54,13 @@ footer {
     align-items: center;
 }
 
+.socialmedia {
+    display: flex;
+    align-items: center;
+}
+
 .socialmedia img {
     width: 30px;
     height: auto;
     margin-left: 15px;
-
-}
-
-header img {
-    max-width: 150px;
-    height: auto;
-
 }
