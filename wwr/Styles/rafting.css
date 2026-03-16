@@ -54,11 +54,6 @@ footer {
     align-items: center;
 }
 
-.socialmedia {
-    display: flex;
-    align-items: center;
-}
-
 .socialmedia img {
     width: 30px;
     height: auto;
