@@ -1,4 +1,3 @@
-/* --- VARIABLES & RESET --- */
 :root {
     --primary-color: #055a05;
     /* Forest green */
@@ -25,7 +24,6 @@ body {
     background-color: #ffffff;
 }
 
-/* --- CENTER ALIGNMENT FOR ENTIRE DESIGN --- */
 header,
 main,
 footer {
