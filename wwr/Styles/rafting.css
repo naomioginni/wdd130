@@ -1,37 +1,146 @@
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 2px solid var(--primary-color);
+/* --- VARIABLES & RESET --- */
+:root {
+    --primary-color: #055a05;
+    /* Forest green */
+    --secondary-color: #f4a261;
+    /* Warm sand */
+    --accent1-color: #264653;
+    /* Dark slate blue */
+    --accent2-color: #e9c46a;
+    /* Light golden yellow */
+    --bg-light: #f9f9f9;
+    --heading-font: "Georgia", serif;
+    --body-font: "Arial", sans-serif;
 }
 
-header img {
-    max-width: 100%;
-    height: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    list-style: none;
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #ffffff;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
+/* --- CENTER ALIGNMENT FOR ENTIRE DESIGN --- */
+header,
+main,
+footer {
+    width: 900px;
+    /* Adjust if you need a different maximum width */
+    margin: 0 auto;
+    /* This strictly centers the design */
+    background-color: var(--bg-light);
+    /* Added to match wireframe blocks */
+    margin-bottom: 15px;
+    /* Space between the main blocks */
+    border: 1px solid #ccc;
+    /* Subtle border to match wireframe outlines */
+}
+
+/* Remove default padding/margin from sections for clean borders */
+section {
+    padding: 20px;
+    border-top: 1px solid #ccc;
 }
 
 h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* --- HEADER (CSS Grid) --- */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    /* 150px for logo, remaining space for nav */
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #e6e6fa;
+    /* Light purple to match wireframe header/footer */
+}
+
+/* Fixed Logo Size */
+header .logo {
+    width: 100%;
+    max-width: 120px;
+    /* Restricts the logo from getting too big */
+    height: auto;
+}
+
+/* --- NAVIGATION (CSS Flexbox) --- */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    /* Pushes menu to the right */
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    padding: 10px 15px;
+    border: 1px solid #999;
+    /* Matches the boxed links in wireframe */
+    background-color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* --- HERO SECTION (Absolute Positioning) --- */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero .hero-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px 0;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* Matches the white box in the wireframe */
+}
+
+.hero article img {
+    float: right;
+    width: 120px;
+    margin-left: 20px;
+}
+
+/* --- HISTORY SECTION (CSS Grid) --- */
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* Three equal columns */
     gap: 20px;
     align-items: center;
 }
@@ -39,40 +148,42 @@ h2 {
 .history-grid img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
+/* --- ADVENTURE SECTION (CSS Flexbox) --- */
 .adventure-flex {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    /* Spreads the 5 figures evenly */
+    gap: 10px;
 }
 
 .adventure-flex figure {
     width: 18%;
+    /* Fits 5 items neatly inside the container */
     text-align: center;
 }
 
 .adventure-flex img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .adventure-flex figcaption {
-    font-style: italic;
+    font-size: 0.9em;
     color: var(--accent1-color);
 }
 
+/* --- FOOTER (CSS Flexbox) --- */
 footer {
     display: flex;
     justify-content: space-between;
-    /* Copyright on left, Socials on right */
+    /* Copyright left, icons right */
     align-items: center;
-    padding: 20px 0;
-    border-top: 2px solid var(--primary-color);
-    margin-top: 40px;
+    padding: 20px;
+    background-color: #e6e6fa;
+    /* Light purple to match wireframe header/footer */
 }
 
 .socialmedia {
@@ -81,6 +192,7 @@ footer {
 }
 
 .socialmedia img {
-    width: 30px;
+    width: 35px;
+    /* Forces social icons to be a uniform, small size */
     height: auto;
 }
