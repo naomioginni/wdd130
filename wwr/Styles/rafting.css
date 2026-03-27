@@ -1,12 +1,8 @@
 :root {
     --primary-color: #055a05;
-    /* Forest green */
     --secondary-color: #f4a261;
-    /* Warm sand */
     --accent1-color: #264653;
-    /* Dark slate blue */
     --accent2-color: #e9c46a;
-    /* Light golden yellow */
     --bg-light: #f9f9f9;
     --heading-font: "Georgia", serif;
     --body-font: "Arial", sans-serif;
@@ -28,18 +24,12 @@ header,
 main,
 footer {
     width: 900px;
-    /* Adjust if you need a different maximum width */
     margin: 0 auto;
-    /* This strictly centers the design */
     background-color: var(--bg-light);
-    /* Added to match wireframe blocks */
     margin-bottom: 15px;
-    /* Space between the main blocks */
     border: 1px solid #ccc;
-    /* Subtle border to match wireframe outlines */
 }
 
-/* Remove default padding/margin from sections for clean borders */
 section {
     padding: 20px;
     border-top: 1px solid #ccc;
@@ -52,30 +42,23 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* --- HEADER (CSS Grid) --- */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
-    /* 150px for logo, remaining space for nav */
     align-items: center;
     padding: 15px 20px;
     background-color: #e6e6fa;
-    /* Light purple to match wireframe header/footer */
 }
 
-/* Fixed Logo Size */
 header .logo {
     width: 100%;
     max-width: 120px;
-    /* Restricts the logo from getting too big */
     height: auto;
 }
 
-/* --- NAVIGATION (CSS Flexbox) --- */
 nav ul {
     display: flex;
     justify-content: flex-end;
-    /* Pushes menu to the right */
     list-style: none;
     gap: 20px;
 }
@@ -85,7 +68,6 @@ nav ul li a {
     color: var(--accent1-color);
     padding: 10px 15px;
     border: 1px solid #999;
-    /* Matches the boxed links in wireframe */
     background-color: #fff;
 }
 
@@ -94,7 +76,6 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* --- HERO SECTION (Absolute Positioning) --- */
 .hero {
     position: relative;
     width: 100%;
@@ -125,7 +106,6 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border: 1px solid #ccc;
-    /* Matches the white box in the wireframe */
 }
 
 .hero article img {
@@ -134,11 +114,9 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 
-/* --- HISTORY SECTION (CSS Grid) --- */
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* Three equal columns */
     gap: 20px;
     align-items: center;
 }
@@ -148,17 +126,14 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* --- ADVENTURE SECTION (CSS Flexbox) --- */
 .adventure-flex {
     display: flex;
     justify-content: space-between;
-    /* Spreads the 5 figures evenly */
     gap: 10px;
 }
 
 .adventure-flex figure {
     width: 18%;
-    /* Fits 5 items neatly inside the container */
     text-align: center;
 }
 
@@ -173,15 +148,12 @@ nav ul li a:hover {
     color: var(--accent1-color);
 }
 
-/* --- FOOTER (CSS Flexbox) --- */
 footer {
     display: flex;
     justify-content: space-between;
-    /* Copyright left, icons right */
     align-items: center;
     padding: 20px;
     background-color: #e6e6fa;
-    /* Light purple to match wireframe header/footer */
 }
 
 .socialmedia {
@@ -191,6 +163,5 @@ footer {
 
 .socialmedia img {
     width: 35px;
-    /* Forces social icons to be a uniform, small size */
     height: auto;
 }
