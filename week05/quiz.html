@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main class="quiz-container">
+        <h1>BASIC HTML & CSS Quiz</h1>
+
+        <form action="#" method="POST">
+
+            <div class="form-group">
+                <label for="q1">1. Fill in the blank: What does CSS stand for?</label>
+                <input type="text" id="q1" name="q1" placeholder="Type your answer here..."
+                  required>
+            </div>
+
+            <div class="form-group">
+                <label for="q2">2. Briefly explain the difference between an ID and a class in
+                    CSS.</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Write your explanation here..."
+                  required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="q3">3. Which HTML tag is used to define an internal style sheet?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="style">&lt;style&gt;</option>
+                    <option value="script">&lt;script&gt;</option>
+                    <option value="css">&lt;css&gt;</option>
+                    <option value="link">&lt;link&gt;</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="q4">4. How many distinct heading levels (h1, h2, etc.) are available in
+                    standard HTML?</label>
+                <input type="number" id="q4" name="q4" min="1" max="10" placeholder="Enter a number"
+                  required>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+
+        </form>
+    </main>
+</body>
+
+</html>
