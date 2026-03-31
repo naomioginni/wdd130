@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Osun River Rapids</title>
+    <meta name="description"
+      content="Get in touch with Osun River Rapids. Contact us for general inquiries, reservation questions, or website suggestions.">
+    <meta name="author" content="Naomi Oginni">
+    <link rel="stylesheet" href="Styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Osun River Rapids Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Company Information -->
+        <section class="company-info">
+            <h1>Osun River Rapids</h1>
+            <p>123 Main River Street<br>
+                Osogbo, Osun State<br>
+                +234 999 999 9999<br>
+                info@osunriverrapids.com</p>
+        </section>
+
+        <!-- Map and Form Layout (CSS Grid) -->
+        <div class="contact-layout">
+            <!-- Google Map -->
+            <div class="map-container">
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1013374.431611739!2d3.682482030599651!3d7.184347425176638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039aeae1e1a96fd%3A0xe6de880139126bfa!2sOsun%20River!5e0!3m2!1sen!2sng!4v1774966055744!5m2!1sen!2sng"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="#" method="get" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
+                      required>
+                </div>
+
+                <fieldset class="message-purpose">
+                    <legend>Message Purpose</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general" checked> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-group message-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"
+                      placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="newsletter" value="subscribe"> Please subscribe
+                        me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Get in Touch!</button>
+            </form>
+        </div>
+
+        <!-- Employee Profiles -->
+        <section class="employee-profiles">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-flex">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Profile of Guide Manager">
+                    <figcaption>Tunde - Lead River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Profile of Reservation Specialist">
+                    <figcaption>Aisha - Booking Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Profile of Safety Coordinator">
+                    <figcaption>Chinedu - Safety Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Osun River Rapids | Naomi Oginni</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.jpg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

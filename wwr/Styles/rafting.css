@@ -165,3 +165,148 @@ footer {
     width: 35px;
     height: auto;
 }
+
+/* =========================================
+   CONTACT PAGE SPECIFIC STYLES
+   ========================================= */
+.company-info {
+    text-align: center;
+    margin-bottom: 30px;
+    border-top: none;
+}
+
+.company-info h1 {
+    margin-bottom: 10px;
+    color: var(--accent1-color);
+}
+
+.company-info p {
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border: none;
+    /* Applied here instead of inline per instructions */
+    background-color: #e0e0e0;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    /* Aligns labels to the left of inputs */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.message-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form label {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 100%;
+    font-family: var(--body-font);
+}
+
+.contact-form textarea {
+    margin-top: 5px;
+    resize: vertical;
+}
+
+/* Radio Buttons & Checkbox */
+.message-purpose {
+    border: none;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    /* Aligns with inputs */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message-purpose legend {
+    float: left;
+    margin-left: -80px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #e0e0e0;
+    color: var(--accent1-color);
+    border: 1px solid #999;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #d0d0d0;
+}
+
+/* Employee Profiles Layout (Flexbox) */
+.employee-profiles {
+    background-color: #f5f5f5;
+    /* Light grey block from wireframe */
+    margin-bottom: 0;
+}
+
+.employee-flex {
+    display: flex;
+    justify-content: space-around;
+    /* Spreads profiles evenly */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.employee-flex figure {
+    text-align: center;
+    width: 30%;
+}
+
+.employee-flex img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    /* Optional: Makes profile pictures circular */
+    margin-bottom: 10px;
+}
