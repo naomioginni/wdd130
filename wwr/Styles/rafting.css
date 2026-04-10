@@ -44,16 +44,18 @@ h2 {
 
 header {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 150px 1fr; 
     align-items: center;
-    padding: 15px 20px;
-    background-color: #e6e6fa;
+    background-color: #553b92; 
+    padding: 10px 20px;
 }
 
-header .logo {
-    width: 100%;
-    max-width: 120px;
+header .logo, 
+header img {
+    width: 100%; 
+    max-width: 100px; 
     height: auto;
+    display: block; /
 }
 
 nav ul {
@@ -309,4 +311,310 @@ footer {
     border-radius: 50%;
     /* Optional: Makes profile pictures circular */
     margin-bottom: 10px;
+}
+
+/* General Layout */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Header & Nav */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    background-color: #553b92;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Hero Section with Absolute Positioning */
+#hero {
+    position: relative;
+    display: block;
+}
+
+#hero-box {
+    width: 100%;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(125, 125, 125, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    color: white;
+    margin: 0;
+}
+
+/* Home Icons Section (Grid) */
+.home-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+/* History Section (Grid) */
+.home-history {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    align-items: center;
+    background-color: #d8c4a4;
+    padding: 20px;
+}
+
+.history-img {
+    width: 100%;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #553b92;
+    color: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social img {
+    width: 40px;
+}
+
+/* Page Title Header */
+.trips-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #2b5b84; /* Professional Blue */
+}
+
+/* 3-Column Image Gallery Grid */
+.trips-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Forces 3 equal columns */
+    gap: 30px; 
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.trip-card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.trip-card h3 {
+    color: #2b5b84;
+    margin-top: 0;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; /* Prevents images from stretching */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Trip Comparison Table */
+.trips-table-container {
+    max-width: 900px;
+    margin: 3rem auto; 
+    padding: 0 2rem;
+}
+
+.trips-table-container h2 {
+    text-align: center;
+    color: #1a5e20; /* Dark Green from your screenshot */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 2rem;
+}
+
+th, td {
+    border: 1px solid #ccc; 
+    padding: 15px;
+    text-align: left; 
+}
+
+th {
+    background-color: #2b5b84; /* Blue Header */
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Striped rows */
+}
+
+/* Call to Action Button */
+.cta-section {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.cta-section h2 {
+    color: #1a5e20;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1a5e20;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #114015; /* Darker green on hover */
+}
+
+
+/* =========================================
+   Home Page: Hero Section
+   ========================================= */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Sets a fixed height for the banner */
+    overflow: hidden;
+}
+
+.hero-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the space beautifully without squishing */
+}
+
+.hero-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly centers the text */
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white box */
+    color: #1a5e20;
+    padding: 20px 40px;
+    font-size: 2.5rem;
+    border-radius: 8px;
+    margin: 0;
+}
+
+/* =========================================
+   Home Page: Newsletter
+   ========================================= */
+.newsletter {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.newsletter h2 {
+    color: #1a5e20;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* =========================================
+   Home Page: 2-Column Grid
+   ========================================= */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates exactly 2 equal columns */
+    gap: 3rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the grid on the page */
+    align-items: center; /* Vertically centers text with the images */
+}
+
+.home-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.grid-text h2 {
+    color: #1a5e20;
+    margin-top: 0;
+}
+
+.grid-text p {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
